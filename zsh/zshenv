@@ -1,0 +1,13 @@
+# nvm
+export NVM_DIR="/Users/bassam/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# z
+. `brew --prefix`/etc/profile.d/z.sh
+
+# ~/.bin directory
+export PATH="$HOME/.bin:$PATH"

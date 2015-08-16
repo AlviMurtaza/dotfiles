@@ -1,0 +1,14 @@
+# create a directory and cd into it
+function mcd {
+    command mkdir $1 && cd $1
+}
+
+# simple python server
+function server {
+    python -m SimpleHTTPServer
+}
+
+# Create Tmux session of current directory name
+function new-tmux-from-dir-name {
+    tmux new-session -As `basename $PWD`
+}

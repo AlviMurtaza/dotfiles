@@ -1,0 +1,45 @@
+filetype off
+
+call plug#begin('~/.vim/plugged')
+
+" Markdown
+Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
+
+" Front-end
+Plug 'mattn/emmet-vim', {'for': 'html'}
+Plug 'tpope/vim-haml', {'for': ['scss', 'sass', 'haml']}
+Plug 'wavded/vim-stylus', {'for': 'stylus'}
+Plug 'mxw/vim-jsx', {'for': ['javascript', 'jsx']}
+
+" UI
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'bling/vim-airline'
+
+" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" Completion
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'SirVer/ultisnips'
+
+" Movement
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'junegunn/vim-peekaboo'
+Plug 'terryma/vim-multiple-cursors'
+
+" Enhancement
+runtime macros/matchit.vim
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'scrooloose/syntastic', { 'for': ['php', 'javascript', 'scss', 'sass'] }
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-eunuch'
+
+" Tmux
+Plug 'christoomey/vim-tmux-runner'
+Plug 'christoomey/vim-tmux-navigator'
+
+call plug#end()
+filetype on

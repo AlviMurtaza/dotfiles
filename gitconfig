@@ -1,0 +1,63 @@
+[user]
+  name  = Bassam Ismail
+  email = skippednote@gmail.com
+
+[diff]
+  tool = vimdiff
+
+[commit]
+  template = /Users/bassam/.gitmessage
+
+[color]
+  ui = auto
+
+[help]
+  autocorrect = 1
+
+[core]
+  pager        = less -r
+  excludesfile = /Users/bassam/.gitignore
+  editor = vim
+
+[alias]
+  a   = add
+  aa  = add --all
+  cl  = clone
+  c   = commit -v
+  cm  = commit -s -m
+  cam = commit -s -am
+  co  = checkout
+  cob = checkout -b
+  d   = diff
+  pu  = push
+  pl  = pull
+  pr  = pull --rebase
+  s   = status
+  sb  = status -sb
+  rv  = remote -v
+  rhh = reset --hard HEAD
+  rhs = reset --soft HEAD
+  lp  = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  bl  = branch -l
+  br  = branch -r
+  log = log --show-signature
+  cfd = clean -fd
+  cf = clean -f
+
+[github]
+  user = bassam
+
+[blame]
+  date = short
+
+[credential]
+  helper = osxkeychain
+
+[push]
+  default = current
+
+[pull]
+  default = current
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/

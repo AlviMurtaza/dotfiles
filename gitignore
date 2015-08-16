@@ -1,0 +1,10 @@
+*.DS_Store
+.sass-cache
+tags
+*.sw[nop]
+node_modules
+.tag
+.tags
+*.css.map
+.idea
+settings.php
