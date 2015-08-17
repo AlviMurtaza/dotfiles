@@ -179,7 +179,7 @@ if executable('ag')
   " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
-  let g:ctrlp_working_path_mode = 'ca'
+  " let g:ctrlp_working_path_mode = 'ca'
 
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
@@ -217,9 +217,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>rv :source $MYVIMRC<cr>
 
 " Syntastic
-let g:syntastic_php_checkers = ['php', 'phpcs']
-let g:syntastic_scss_checkers = ['scss_lint']
-autocmd FileType javascript let b:syntastic_checkers = findfile('.jscsrc', '.;') != '' ? ['jscs'] : ['jshint']
+let g:syntastic_javascript_checkers=['eslint']
 
 " Fugative
 nnoremap <leader>gs :Gstatus<cr>
@@ -252,3 +250,6 @@ nnoremap <c-j> <c-w><c-j>
 nnoremap <c-k> <c-w><c-k>
 nnoremap <c-l> <c-w><c-l>
 nnoremap <c-h> <c-w><c-h>
+
+" JSX
+let g:jsx_ext_required = 0

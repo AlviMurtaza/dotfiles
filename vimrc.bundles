@@ -10,6 +10,7 @@ Plug 'mattn/emmet-vim', {'for': 'html'}
 Plug 'tpope/vim-haml', {'for': ['scss', 'sass', 'haml']}
 Plug 'wavded/vim-stylus', {'for': 'stylus'}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'jsx']}
+Plug 'marijnh/tern_for_vim', {'for': ['javascript', 'jsx']}
 
 " UI
 Plug 'chriskempson/vim-tomorrow-theme'
@@ -33,7 +34,6 @@ Plug 'terryma/vim-multiple-cursors'
 runtime macros/matchit.vim
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'scrooloose/syntastic', { 'for': ['php', 'javascript', 'scss', 'sass'] }
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-eunuch'
 
