@@ -13,6 +13,7 @@
   '(cider
     clojure-mode
     company
+    company-tern
     editorconfig
     emmet-mode
     exec-path-from-shell

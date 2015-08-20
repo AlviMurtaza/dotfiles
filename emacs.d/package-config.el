@@ -13,6 +13,10 @@
 (setq company-idle-delay 0.2)
 (setq company-minimum-prefix-length 1)
 
+;; Company tern
+(add-hook 'js2-mode-hook 'company-tern)
+(add-to-list 'company-backends 'company-tern)
+
 ;; Flycheck
 (require 'flycheck)
 (setq-default flycheck-disabled-checkers
@@ -36,3 +40,4 @@
 (add-hook 'css-mode-hook 'rainbow-mode)
 (add-hook 'sgml-mode-hook 'rainbow-mode)
 (add-hook 'stylus-mode-hook 'rainbow-mode)
+(add-hook 'web-mode-hook 'rainbow-mode)
