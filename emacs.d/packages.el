@@ -1,5 +1,4 @@
 (require 'package)
-
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
@@ -11,11 +10,21 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(paredit
+  '(cider
     clojure-mode
-    cider
+    company
+    editorconfig
+    emmet-mode
+    exec-path-from-shell
+    flycheck
+    helm
+    js2-mode
     magit
-    exec-path-from-shell))
+    paredit
+    projectile
+    rainbow-mode
+    stylus-mode
+    yasnippet))
 
 (if (eq system-type 'darwin)
     (add-to-list 'my-packages 'exec-path-from-shell))
