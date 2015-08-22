@@ -1,4 +1,4 @@
-; Set font family and size
+;; Set font family and size
 (set-frame-font "Source code pro-14")
 
 ;; Disable initial screen
@@ -13,3 +13,9 @@
 ;; load-theme in terminal
 (if window-system nil
     (load-theme 'wombat))
+
+;; line number
+(global-linum-mode)
+
+;; line number gutter spacing
+(setq linum-format "%2d ")

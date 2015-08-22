@@ -18,13 +18,21 @@
     emmet-mode
     exec-path-from-shell
     flycheck
+    git-gutter-fringe+
     helm
+    helm-ag
+    helm-projectile
     js2-mode
+    json-mode
     magit
+    multiple-cursors
     paredit
     projectile
     rainbow-mode
+    rainbow-delimiters
     stylus-mode
+    undo-tree
+    web-mode
     yasnippet))
 
 (if (eq system-type 'darwin)
@@ -33,4 +41,3 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
-

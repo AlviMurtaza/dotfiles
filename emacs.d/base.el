@@ -4,6 +4,9 @@
 ;; Disable backup
 (setq backup-inhibited t)
 
+;; empty initial scratch buffer
+(setq initial-scratch-message nil)
+
 ;; Disable auto save
 (setq auto-save-default nil)
 

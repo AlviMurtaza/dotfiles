@@ -7,6 +7,13 @@
 
 ;; Enable helm
 (helm-mode 1)
+(global-set-key (kbd "C-x C-b") #'helm-buffers-list)
+(global-set-key (kbd "C-y") #'helm-show-kill-ring)
+
+;; helm ag
+(require 'helm-ag)
+(require 'grep)
+'(helm-ag-use-agignore)
 
 ;; Company mode
 (global-company-mode)
@@ -41,3 +48,19 @@
 (add-hook 'sgml-mode-hook 'rainbow-mode)
 (add-hook 'stylus-mode-hook 'rainbow-mode)
 (add-hook 'web-mode-hook 'rainbow-mode)
+
+;; git gutter fringe +
+(require 'git-gutter-fringe+)
+(global-git-gutter+-mode)
+
+;; Rainbow delimiter
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+(add-hook 'js2-mode-hook 'rainbow-delimiters-mode)
+
+;; Web mode
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+(setq web-mode-code-indent-offset 2)
+
+;; Magit
+(global-set-key (kbd "C-c C-g") 'magit-status)
