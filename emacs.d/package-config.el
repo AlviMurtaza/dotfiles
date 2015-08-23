@@ -34,6 +34,7 @@
 
 ;; js2 mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(setq js2-basic-offset 2)
 
 ;; Yasnippets
 (yas-global-mode 1)
@@ -64,3 +65,25 @@
 
 ;; Magit
 (global-set-key (kbd "C-c C-g") 'magit-status)
+
+;; php
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
+(add-hook 'php-mode-hook 'drupal-mode)
+
+;; undo tree
+(global-undo-tree-mode t)
+
+;; skewer mode
+(add-hook 'js2-mode-hook 'skewer-mode)
+(add-hook 'css-mode-hook 'skewer-css-mode)
+(add-hook 'html-mode-hook 'skewer-html-mode)
+(add-hook 'web-mode-hook 'skewer-html-mode)
+
+;; paren mode
+(show-paren-mode 1)
+
+;; paredit mode
+(add-hook 'clojure-mode-hook 'paredit-mode)
+
+;; Cider
+(add-hook 'cider-mode-hook #'eldoc-mode)

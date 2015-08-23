@@ -12,3 +12,8 @@
 
 ;; Change yes and no to y and n
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; Charset
+(set-terminal-coding-system 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)

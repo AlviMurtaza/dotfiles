@@ -11,9 +11,11 @@
 
 (defvar my-packages
   '(cider
+    clj-refactor
     clojure-mode
     company
     company-tern
+    drupal-mode
     editorconfig
     emmet-mode
     exec-path-from-shell
@@ -28,8 +30,10 @@
     multiple-cursors
     paredit
     projectile
+    php-mode
     rainbow-mode
     rainbow-delimiters
+    skewer-mode
     stylus-mode
     undo-tree
     web-mode
