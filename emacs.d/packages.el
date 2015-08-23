@@ -14,6 +14,7 @@
     clj-refactor
     clojure-mode
     company
+    company-go
     company-tern
     drupal-mode
     editorconfig
@@ -21,9 +22,11 @@
     exec-path-from-shell
     flycheck
     git-gutter-fringe+
+    go-mode
     helm
     helm-ag
     helm-projectile
+    highlight-indentation
     js2-mode
     json-mode
     magit
@@ -31,8 +34,10 @@
     paredit
     projectile
     php-mode
+    racer
     rainbow-mode
     rainbow-delimiters
+    rust-mode
     skewer-mode
     stylus-mode
     undo-tree

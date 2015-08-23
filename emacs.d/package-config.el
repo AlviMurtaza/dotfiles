@@ -87,3 +87,20 @@
 
 ;; Cider
 (add-hook 'cider-mode-hook #'eldoc-mode)
+
+;; Go mode
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
+(add-hook 'go-mode-hook (lambda ()
+                          (set (make-local-variable 'company-backends) '(company-go))
+                          (company-mode)))
+
+;; Rust mode
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+(add-hook 'rust-mode-hook
+  '(lambda ()
+     (racer-activate)
+     (racer-turn-on-eldoc)
+     (local-set-key (kbd "M-.") #'racer-find-definition)
+     (local-set-key (kbd "TAB") #'racer-complete-or-indent)))
+
