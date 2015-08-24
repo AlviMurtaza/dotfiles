@@ -96,11 +96,17 @@
                           (company-mode)))
 
 ;; Rust mode
+(setq racer-cmd "/usr/local/bin/racer")
+(setq racer-rust-src-path "/Users/bassam/.rust/src/")
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 (add-hook 'rust-mode-hook
   '(lambda ()
      (racer-activate)
      (racer-turn-on-eldoc)
+     (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
+     (set (make-local-variable 'company-backends) '(company-racer))
      (local-set-key (kbd "M-.") #'racer-find-definition)
      (local-set-key (kbd "TAB") #'racer-complete-or-indent)))
 
+;; Markdown mode
+(add-to-list 'auto-mode-alist '("\\.m[k]d\\'" . markdown-mode))

@@ -15,12 +15,14 @@
     clojure-mode
     company
     company-go
+    company-racer
     company-tern
     drupal-mode
     editorconfig
     emmet-mode
     exec-path-from-shell
     flycheck
+    flycheck-rust
     git-gutter-fringe+
     go-mode
     helm
@@ -30,6 +32,7 @@
     js2-mode
     json-mode
     magit
+    markdown-mode
     multiple-cursors
     paredit
     projectile
@@ -40,6 +43,7 @@
     rust-mode
     skewer-mode
     stylus-mode
+    toml-mode
     undo-tree
     web-mode
     yasnippet))

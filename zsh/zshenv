@@ -17,3 +17,6 @@ export GOPATH=$HOME/.go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+
+# Rust (for code completion)
+export RUST_SRC_PATH=$HOME/.rust/src
