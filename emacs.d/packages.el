@@ -10,13 +10,15 @@
   (package-refresh-contents))
 
 (defvar my-packages
-  '(cider
+  '(aggressive-indent
+    babel-repl
+    cider
     clj-refactor
     clojure-mode
     company
     company-go
-    company-racer
     company-tern
+    discover
     drupal-mode
     editorconfig
     emmet-mode
@@ -24,22 +26,27 @@
     flycheck
     flycheck-rust
     git-gutter-fringe+
+    git-timemachine
     go-mode
     helm
     helm-ag
     helm-projectile
     highlight-indentation
     js2-mode
+    js2-refactor
     json-mode
     magit
     markdown-mode
     multiple-cursors
     paredit
     projectile
+    projectile-rails
     php-mode
     racer
     rainbow-mode
     rainbow-delimiters
+    rspec-mode
+    ruby-refactor
     rust-mode
     skewer-mode
     stylus-mode

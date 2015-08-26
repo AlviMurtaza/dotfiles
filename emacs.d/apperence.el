@@ -19,3 +19,9 @@
 
 ;; line number gutter spacing
 (setq linum-format "%2d ")
+
+;; line spacing
+(setq-default line-spacing 4)
+
+;; Display cloumn number
+(column-number-mode t)

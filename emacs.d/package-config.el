@@ -61,7 +61,11 @@
 ;; Web mode
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
-(setq web-mode-code-indent-offset 2)
+(add-to-list 'auto-mode-alist '("\\.blade\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.twig\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(setq web-mode-code-indent-style 4)
+(setq web-mode-code-indent-offset 4)
 
 ;; Magit
 (global-set-key (kbd "C-c C-g") 'magit-status)
@@ -99,14 +103,37 @@
 (setq racer-cmd "/usr/local/bin/racer")
 (setq racer-rust-src-path "/Users/bassam/.rust/src/")
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+(add-hook 'rust-mode-hook #'racer-mode)
+(add-hook 'racer-mode-hook #'eldoc-mode)
 (add-hook 'rust-mode-hook
   '(lambda ()
-     (racer-activate)
-     (racer-turn-on-eldoc)
-     (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)
-     (set (make-local-variable 'company-backends) '(company-racer))
      (local-set-key (kbd "M-.") #'racer-find-definition)
      (local-set-key (kbd "TAB") #'racer-complete-or-indent)))
 
 ;; Markdown mode
 (add-to-list 'auto-mode-alist '("\\.m[k]d\\'" . markdown-mode))
+
+;; Hightline indent line
+(highlight-indentation-current-column-mode)
+
+;; Rspec mode
+(add-hook 'ruby-mode 'rspec-mode)
+(eval-after-load 'rspec-mode
+  '(rspec-install-snippets))
+
+;; Ruby refactor
+(add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
+
+;; Projectil rails
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
+;; Discover mode
+(global-discover-mode 1)
+
+;; Comint
+(add-to-list 'comint-preoutput-filter-functions
+             (lambda (output)
+               (replace-regexp-in-string "\033\\[[0-9]+[A-Z]" "" output)))
+
+;; js2 refactor
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
