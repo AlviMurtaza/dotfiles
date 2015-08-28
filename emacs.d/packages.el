@@ -8,9 +8,9 @@
 
 (when (not package-archive-contents)
   (package-refresh-contents))
-
 (defvar my-packages
-  '(aggressive-indent
+  '(ace-jump-mode
+    aggressive-indent
     babel-repl
     cider
     clj-refactor
@@ -24,7 +24,6 @@
     emmet-mode
     exec-path-from-shell
     flycheck
-    flycheck-rust
     git-gutter-fringe+
     git-timemachine
     go-mode
@@ -38,17 +37,21 @@
     magit
     markdown-mode
     multiple-cursors
+    color-theme-sanityinc-solarized
     paredit
+    powerline
     projectile
     projectile-rails
     php-mode
     racer
     rainbow-mode
     rainbow-delimiters
+    restclient
     rspec-mode
     ruby-refactor
     rust-mode
     skewer-mode
+    starter-kit-eshell
     stylus-mode
     toml-mode
     undo-tree
