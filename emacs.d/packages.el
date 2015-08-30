@@ -3,6 +3,8 @@
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("melpa stable" . "http://stable.melpa.org/packages/") t)
 
 (package-initialize)
 
@@ -12,9 +14,11 @@
   '(ace-jump-mode
     aggressive-indent
     babel-repl
-    cider
-    clj-refactor
+    ;;    cider
+    ;;    clj-refactor
+    clojure-cheatsheet
     clojure-mode
+    clojure-snippets
     company
     company-go
     company-tern
@@ -22,6 +26,8 @@
     drupal-mode
     editorconfig
     emmet-mode
+    evil
+    evil-surround
     exec-path-from-shell
     flycheck
     git-gutter-fringe+

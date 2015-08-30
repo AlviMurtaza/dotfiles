@@ -144,10 +144,14 @@
 (add-hook 'js2-mode-hook #'js2-refactor-mode)
 
 ;; Clojure mode
-(add-to-list 'auto-mode-alist '("\\.cljs\\'" . clojure-mode))
-(add-to-list 'clojure-mode-hook (lambda()
-				  (clj-refactor-mode 1)
-				  (cljr-add-keybindings-with-prefix "C-c C-m")))
+; (add-to-list 'auto-mode-alist '("\\.cljs\\'" . clojure-mode))
+; (add-to-list 'clojure-mode-hook (lambda()
+; 				  (clj-refactor-mode 1)
+; 				  (cljr-add-keybindings-with-prefix "C-c C-m")))
 
 ;; Ace jump mode
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;; Evil mode
+(evil-mode 1)
+(global-evil-surround-mode 1)
