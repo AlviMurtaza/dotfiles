@@ -153,5 +153,5 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 ;; Evil mode
-(evil-mode 1)
-(global-evil-surround-mode 1)
+;; (evil-mode 1)
+;; (global-evil-surround-mode 1)

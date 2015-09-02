@@ -32,7 +32,7 @@
 
 
 ;; set themes
-(load-theme 'sanityinc-solarized-light t)
+(load-theme 'sanityinc-solarized-dark t)
 
 ;; Font locking for clojure
 (eval-after-load 'clojure-mode
@@ -51,16 +51,8 @@
 
 (eval-after-load 'clojure-mode
   '(font-lock-add-keywords
-    'clojure-mode `(("\\(#\\){"
-                     (0 (progn (compose-region (match-beginning 1)
-                                               (match-end 1) "∈")
-                               nil))))))
-
-
-(eval-after-load 'clojure-mode
-  '(font-lock-add-keywords
     'clojure-mode `(("(\\(partial\\)[\[[:space:]]"
                      (0 (progn (compose-region (match-beginning 1)
-                                               (match-end 1) "λ")
+                                               (match-end 1) "∈")
                                nil))))))
 

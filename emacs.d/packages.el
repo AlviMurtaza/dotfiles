@@ -26,8 +26,6 @@
     drupal-mode
     editorconfig
     emmet-mode
-    evil
-    evil-surround
     exec-path-from-shell
     flycheck
     git-gutter-fringe+

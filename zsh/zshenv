@@ -20,3 +20,6 @@ export PATH=$PATH:$GOROOT/bin
 
 # Rust (for code completion)
 export RUST_SRC_PATH=$HOME/.rust/src
+
+# Postgresql
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
