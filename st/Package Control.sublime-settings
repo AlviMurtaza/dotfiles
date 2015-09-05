@@ -1,0 +1,28 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"AutoFileName",
+		"Babel",
+		"BracketHighlighter",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"Git",
+		"GitGutter",
+		"GoSublime",
+		"Jade",
+		"Laravel Blade Highlighter",
+		"Material Theme",
+		"Package Control",
+		"PHP Companion",
+		"SCSS",
+		"SideBarEnhancements",
+		"Stylus",
+		"SublimeLinter",
+		"TrailingSpaces"
+	]
+}
