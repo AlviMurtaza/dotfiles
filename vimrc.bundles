@@ -34,8 +34,18 @@ Plug 'terryma/vim-multiple-cursors'
 runtime macros/matchit.vim
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-unimpaired'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'majutsushi/tagbar'
+Plug 'AndrewRadev/splitjoin.vim'
+
+" ruby
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-ragtag'
+Plug 'thoughtbot/vim-rspec'
 
 " Tmux
 Plug 'christoomey/vim-tmux-runner'

@@ -37,7 +37,7 @@ set nobackup
 "Syntax processing
 syntax enable
 
-silent! colorscheme Tomorrow-Night
+" silent! colorscheme Tomorrow
 " set background=dark
 
 "Highlight matching parenthesis-like character
@@ -212,6 +212,9 @@ nnoremap <leader>= mmgg=G`m=<cr>
 " NERDTree show/hide
 map <Leader>n :NERDTreeToggle<cr>
 
+" Tagbar
+map <Leader>t :Tagbar<cr>
+
 " Vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>rv :source $MYVIMRC<cr>
@@ -233,11 +236,11 @@ hi clear SignColumn
 " UltiSnip
 let g:UltiSnipsExpandTrigger="<c-k>"
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
-let g:UltiSnipsJumpBackwardTrigger="<s-c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-j>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 " Airline theme
-let g:airline_theme='tomorrow'
+let g:airline_theme='light'
 
 " Copy to clipboard
 map <Leader>y "*y
@@ -253,3 +256,14 @@ nnoremap <c-h> <c-w><c-h>
 
 " JSX
 let g:jsx_ext_required = 0
+
+" go import on save
+let g:go_fmt_command = "goimports"
+
+" Generate Tag
+map <Leader>rt :!ctags --tag-relative --extra=+f -Rf.git/tags --exclude=.git,pkg --languages=-sql<CR><CR>
+set tags+=.git/tags
+
+" Neckbeard https://youtu.be/w6kPgTkEbZQ?t=13m13s
+let ruby_space_errors = 1
+let c_space_errors = 1

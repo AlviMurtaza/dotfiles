@@ -14,8 +14,8 @@
   '(ace-jump-mode
     aggressive-indent
     babel-repl
-    ;;    cider
-    ;;    clj-refactor
+    cider
+    clj-refactor
     clojure-cheatsheet
     clojure-mode
     clojure-snippets
@@ -31,6 +31,7 @@
     git-gutter-fringe+
     git-timemachine
     go-mode
+    go-eldoc
     helm
     helm-ag
     helm-projectile

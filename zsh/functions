@@ -12,3 +12,9 @@ function server {
 function new-tmux-from-dir-name {
     tmux new-session -As `basename $PWD`
 }
+
+function sd {
+  docker-machine start $1 > /dev/null
+  eval "$(docker-machine env $1)" > /dev/null
+  docker-machine ip $1
+}

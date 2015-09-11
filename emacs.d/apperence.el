@@ -32,7 +32,7 @@
 
 
 ;; set themes
-(load-theme 'sanityinc-solarized-dark t)
+(load-theme 'sanityinc-solarized-light t)
 
 ;; Font locking for clojure
 (eval-after-load 'clojure-mode
