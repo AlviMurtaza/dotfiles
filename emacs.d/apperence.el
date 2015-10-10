@@ -1,5 +1,5 @@
 ;; Set font family and size
-(set-frame-font "Source code pro-14")
+(set-frame-font "hack-15")
 
 ;; Disable initial screen
 (setq inhibit-startup-screen t)

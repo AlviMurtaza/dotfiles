@@ -37,7 +37,7 @@ set nobackup
 "Syntax processing
 syntax enable
 
-" silent! colorscheme Tomorrow
+silent! colorscheme Tomorrow-Night
 " set background=dark
 
 "Highlight matching parenthesis-like character
@@ -240,7 +240,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-j>"
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
 " Airline theme
-let g:airline_theme='light'
+let g:airline_theme='tomorrow'
 
 " Copy to clipboard
 map <Leader>y "*y
@@ -267,3 +267,14 @@ set tags+=.git/tags
 " Neckbeard https://youtu.be/w6kPgTkEbZQ?t=13m13s
 let ruby_space_errors = 1
 let c_space_errors = 1
+
+let g:rspec_command = "call VtrSendCommand('rspec {spec}', 1)"
+map <Leader>e :call RunCurrentSpecFile()<CR>
+map <Leader>nn :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+
+nnoremap <leader>fr :VtrFocusRunner<cr>
+nnoremap <leader>kr :VtrKillRunner<cr>
+nnoremap <leader>rr :VtrSendLinesToRunner<cr>
+nnoremap <leader>dr :VtrSendCtrlD<cr>
+nnoremap <leader>ar :VtrAttachToPane<cr>

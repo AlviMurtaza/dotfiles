@@ -1,5 +1,15 @@
 {
-	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.light (SL).tmTheme",
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"__pycache__",
+		"node_modules",
+		"bower_components"
+	],
 	"font_face": "hack",
 	"font_size": 15,
 	"highlight_line": true,
@@ -10,5 +20,5 @@
 	"line_padding_bottom": 5,
 	"line_padding_top": 5,
 	"show_panel_on_build": false,
-	"theme": "Spacegray.sublime-theme"
+	"theme": "Spacegray Light.sublime-theme"
 }

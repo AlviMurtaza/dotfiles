@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 
 " Markdown
 Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
+Plug 'junegunn/goyo.vim'
 
 " Front-end
 Plug 'mattn/emmet-vim', {'for': 'html'}
@@ -21,7 +22,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Completion
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
+Plug 'Shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
 
 " Movement
@@ -36,6 +37,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-obsession'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'majutsushi/tagbar'
 Plug 'AndrewRadev/splitjoin.vim'
@@ -53,5 +55,13 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Go
 Plug 'fatih/vim-go'
+
+" Elm
+Plug 'ElmCast/elm-vim'
+
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+
 call plug#end()
+
 filetype on
