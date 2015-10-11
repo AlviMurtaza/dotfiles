@@ -278,3 +278,10 @@ nnoremap <leader>kr :VtrKillRunner<cr>
 nnoremap <leader>rr :VtrSendLinesToRunner<cr>
 nnoremap <leader>dr :VtrSendCtrlD<cr>
 nnoremap <leader>ar :VtrAttachToPane<cr>
+
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
