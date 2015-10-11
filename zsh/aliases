@@ -8,6 +8,8 @@ alias rf='trash'
 alias mkdir='mkdir -p'
 alias path='echo $PATH | tr -s ":" "\n"'
 
+alias ducks='du -cksh * | sort -rn|head -11'
+
 alias l='ls'
 alias a='ls -la'
 alias ll='ls -lh'

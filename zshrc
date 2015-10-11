@@ -1,5 +1,4 @@
 [[ -f ~/.antigen/antigen.zsh ]] && source ~/.antigen/antigen.zsh
-# [[ -f ~/.zsh/prompt ]] && source ~/.zsh/prompt
 [[ -f ~/.zsh/aliases ]] && source ~/.zsh/aliases
 [[ -f ~/.zsh/functions ]] && source ~/.zsh/functions
 [[ -f ~/.zsh/zshenv ]] && source ~/.zsh/zshenv
