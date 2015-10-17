@@ -46,6 +46,13 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'christoomey/vim-tmux-runner'
 Plug 'christoomey/vim-tmux-navigator'
 
+" Elm
+Plug 'ElmCast/elm-vim'
+
+" Elixir
+Plug 'elixir-lang/vim-elixir'
+Plug 'mattreduce/vim-mix'
+
 call plug#end()
 
 filetype on
