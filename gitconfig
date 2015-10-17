@@ -6,7 +6,7 @@
   tool = vimdiff
 
 [commit]
-  template = /Users/bassam/.gitmessage
+  template = /Users/skippednote/.gitmessage
 
 [color]
   ui = auto
@@ -16,7 +16,7 @@
 
 [core]
   pager        = less -r
-  excludesfile = /Users/bassam/.gitignore
+  excludesfile = /Users/skippednote/.gitignore
   editor = vim
 
 [alias]
@@ -46,7 +46,7 @@
   ignore = update-index --assume-unchanged
 
 [github]
-  user = bassam
+  user = skippednote
 
 [blame]
   date = short

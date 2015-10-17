@@ -2,8 +2,8 @@
 set nocompatible
 
 " Load Plug and bundles
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
+if filereadable(expand("~/.vim/vimrc.bundles"))
+  source ~/.vim/vimrc.bundles
 endif
 
 " Detect filetype automatically
@@ -25,25 +25,24 @@ set timeout timeoutlen=500 ttimeoutlen=100
 " Larger history
 set history=10000
 
-autocmd BufRead,BufNewFile *.md setlocal spell
-set complete+=kspell
-
 " autoload changed files
 set autoread
 
+" Disable junk files
 set noswapfile
 set nobackup
 
-"Syntax processing
+" Syntax processing
 syntax enable
 
+" Set colorscheme
 silent! colorscheme Tomorrow-Night
 " set background=dark
 
-"Highlight matching parenthesis-like character
+" Highlight matching parenthesis-like character
 set showmatch
 
-"set number of colors supported to 256
+" set number of colors supported to 256
 set t_Co=256
 
 "Show relative line number
@@ -212,15 +211,9 @@ nnoremap <leader>= mmgg=G`m=<cr>
 " NERDTree show/hide
 map <Leader>n :NERDTreeToggle<cr>
 
-" Tagbar
-map <Leader>t :Tagbar<cr>
-
 " Vimrc
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>rv :source $MYVIMRC<cr>
-
-" Syntastic
-let g:syntastic_javascript_checkers=['eslint']
 
 " Fugative
 nnoremap <leader>gs :Gstatus<cr>
@@ -256,28 +249,6 @@ nnoremap <c-h> <c-w><c-h>
 
 " JSX
 let g:jsx_ext_required = 0
-
-" go import on save
-let g:go_fmt_command = "goimports"
-
-" Generate Tag
-map <Leader>rt :!ctags --tag-relative --extra=+f -Rf.git/tags --exclude=.git,pkg --languages=-sql<CR><CR>
-set tags+=.git/tags
-
-" Neckbeard https://youtu.be/w6kPgTkEbZQ?t=13m13s
-let ruby_space_errors = 1
-let c_space_errors = 1
-
-let g:rspec_command = "call VtrSendCommand('rspec {spec}', 1)"
-map <Leader>e :call RunCurrentSpecFile()<CR>
-map <Leader>nn :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-
-nnoremap <leader>fr :VtrFocusRunner<cr>
-nnoremap <leader>kr :VtrKillRunner<cr>
-nnoremap <leader>rr :VtrSendLinesToRunner<cr>
-nnoremap <leader>dr :VtrSendCtrlD<cr>
-nnoremap <leader>ar :VtrAttachToPane<cr>
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
