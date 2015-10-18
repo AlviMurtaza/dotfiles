@@ -20,6 +20,7 @@ Plug 'bling/vim-airline'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'rhysd/committia.vim'
 
 " Completion
 Plug 'Shougo/neocomplete.vim'
