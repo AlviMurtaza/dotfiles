@@ -32,7 +32,6 @@ antigen bundle zsh-users/zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export LANG=en_US.UTF-8

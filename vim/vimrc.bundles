@@ -1,5 +1,4 @@
 filetype off
-
 call plug#begin('~/.vim/plugged')
 
 " Markdown
@@ -7,9 +6,11 @@ Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
 Plug 'junegunn/goyo.vim'
 
 " Front-end
-Plug 'mattn/emmet-vim', {'for': 'html'}
+Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-haml', {'for': ['scss', 'sass', 'haml']}
 Plug 'wavded/vim-stylus', {'for': 'stylus'}
+Plug 'pangloss/vim-javascript', {'for': ['javascript', 'jsx']}
+Plug 'isRuslan/vim-es6', {'for': ['javascript', 'jsx']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'jsx']}
 Plug 'marijnh/tern_for_vim', {'for': ['javascript', 'jsx']}
 
@@ -21,6 +22,7 @@ Plug 'bling/vim-airline'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rhysd/committia.vim'
+Plug 'rhysd/conflict-marker.vim'
 
 " Completion
 Plug 'Shougo/neocomplete.vim'
@@ -28,32 +30,24 @@ Plug 'SirVer/ultisnips'
 
 " Movement
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'junegunn/vim-peekaboo'
 Plug 'terryma/vim-multiple-cursors'
 
 " Enhancement
 runtime macros/matchit.vim
+Plug 'rking/ag.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-obsession'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'majutsushi/tagbar'
-Plug 'AndrewRadev/splitjoin.vim'
+Plug 'scrooloose/syntastic'
 
 " Tmux
 Plug 'christoomey/vim-tmux-runner'
 Plug 'christoomey/vim-tmux-navigator'
-
-" Elm
-Plug 'ElmCast/elm-vim'
-
-" Elixir
-Plug 'elixir-lang/vim-elixir'
-Plug 'mattreduce/vim-mix'
-
 call plug#end()
 
 filetype on

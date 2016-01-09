@@ -158,6 +158,9 @@ nnoremap <space> za
 noremap H ^
 noremap L $
 
+noremap j gj
+noremap k gk
+
 "Leave insert mode
 inoremap jk <esc>
 
@@ -188,7 +191,6 @@ endif
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " bind \ (backward slash) to grep shortcut
-command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
 nnoremap \ :Ag<SPACE>
 
 "Toggle background from dark to light
@@ -256,3 +258,14 @@ let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
 let g:neocomplete#enable_smart_case = 1
+
+let g:go_fmt_command = "goimports"
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exec = 'eslint_d'
+let g:syntastic_gitcommit_checkers = ['language_check']

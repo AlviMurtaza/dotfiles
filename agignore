@@ -1,9 +1,6 @@
 .git
-.svn
-.grunt
+.svg
 .sass-cache
 .DS_Store
 node_modules
-jspm_packages
 tmp
-#*

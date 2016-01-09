@@ -7,12 +7,12 @@ if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
 fi
 
 # install leiningen
-# if [ ! -e $HOME/.bin/lein ]; then
-#     curl -fLo ~/.bin/lein --create-dirs \
-#             https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
-#             && chmod a+x ~/.bin/lein \
-#             && source ~/.bin/lein
-# fi
+if [ ! -e $HOME/.bin/lein ]; then
+    curl -fLo ~/.bin/lein --create-dirs \
+            https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
+            && chmod a+x ~/.bin/lein \
+            && source ~/.bin/lein
+fi
 
 # install fzf
 if [ ! -e $HOME/.fzf/fzf ]; then
@@ -29,4 +29,6 @@ fi
 vim +PlugInstall +PlugClean! +qa
 
 # TMUX
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+if [ ! -e $HOME/.tmux/plugins/tpm/tpm ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi

@@ -1,23 +1,43 @@
 [user]
-  name  = Bassam Ismail
+  name = Bassam Ismail
   email = skippednote@gmail.com
 
-[diff]
-  tool = vimdiff
-
-[commit]
-  template = /Users/skippednote/.gitmessage
-
 [color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
   ui = auto
+
+[core]
+  editor = vim
+	excludesfile = /Users/skippednote/.gitignore_global
 
 [help]
   autocorrect = 1
 
-[core]
-  pager        = less -r
-  excludesfile = /Users/skippednote/.gitignore
-  editor = vim
+[commit]
+  template = /Users/skippednote/.gitmessage
+
+[push]
+  branch = current
+  default = simple
+
+[pull]
+  branch = current
+  default = simple
+
+[blame]
+  date = short
+
+[diff]
+  tool = vimdiff
+
+[credential]
+  helper = osxkeychain
+
+[github]
+  user = skippednote
 
 [alias]
   a   = add
@@ -44,25 +64,9 @@
   cfd = clean -fd
   cf = clean -f
   ignore = update-index --assume-unchanged
-
-[github]
-  user = skippednote
-
-[blame]
-  date = short
-
-[credential]
-  helper = osxkeychain
-
-[push]
-  default = current
-
-[pull]
-  default = current
-
-[url "git@github.com:"]
-  insteadOf = https://github.com/
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/skippednote/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
