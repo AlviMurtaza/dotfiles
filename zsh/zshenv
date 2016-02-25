@@ -6,40 +6,14 @@ source $(brew --prefix nvm)/nvm.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-
-# composer
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-
 # z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# ~/.bin directory
-export PATH="$HOME/.bin:$PATH"
+# GOPATH
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export GOROOT="/usr/local/Cellar/go/1.5.2/libexec"
+export GOPATH="$HOME/.go"
 
-# Golang
-export GOPATH=$HOME/.go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-
-
-export PATH="$PATH:$HOME/.vim/plugged/vim-greenbar/bin/"
-
-# Rust (for code completion)
-# export RUST_SRC_PATH=$HOME/.rust/src
-
-# Postgresql
-# export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
-# export ANDROID_HOME=/usr/local/opt/android-sdk
-
-# export REACT_EDITOR=vim 
-export EDITOR=vim 
-
-export PATH="/Applications/MAMP/bin/php/php5.6.10/bin:$PATH"
-export DRUSH_PHP=/Applications/MAMP/bin/php/php5.6.10/bin/php
-export PATH=/Applications/MAMP/Library/bin/:$PATH
+# Composer
+export PATH=/Applications/XAMPP/bin:$PATH
+export PATH=$PATH:$HOME/.composer/vendor/bin

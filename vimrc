@@ -36,7 +36,7 @@ set nobackup
 syntax enable
 
 " Set colorscheme
-silent! colorscheme Tomorrow-Night
+silent! colorscheme tomorrow-night
 " set background=dark
 
 " Highlight matching parenthesis-like character
@@ -269,3 +269,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_eslint_exec = 'eslint_d'
 let g:syntastic_gitcommit_checkers = ['language_check']
+
+let g:elm_format_autosave = 1
+
+let g:markdown_fenced_languages = ['html', 'vim', 'ruby', 'python', 'bash=sh']

@@ -3,26 +3,23 @@ call plug#begin('~/.vim/plugged')
 
 " Markdown
 Plug 'gabrielelana/vim-markdown', {'for': 'markdown'}
-Plug 'junegunn/goyo.vim'
 
 " Front-end
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-haml', {'for': ['scss', 'sass', 'haml']}
-Plug 'wavded/vim-stylus', {'for': 'stylus'}
 Plug 'pangloss/vim-javascript', {'for': ['javascript', 'jsx']}
 Plug 'isRuslan/vim-es6', {'for': ['javascript', 'jsx']}
 Plug 'mxw/vim-jsx', {'for': ['javascript', 'jsx']}
-Plug 'marijnh/tern_for_vim', {'for': ['javascript', 'jsx']}
 
 " UI
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'rhysd/committia.vim'
-Plug 'rhysd/conflict-marker.vim'
 
 " Completion
 Plug 'Shougo/neocomplete.vim'
@@ -38,16 +35,24 @@ Plug 'terryma/vim-multiple-cursors'
 runtime macros/matchit.vim
 Plug 'rking/ag.vim'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-obsession'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/syntastic'
 
+" Go
+Plug 'fatih/vim-go'
+
+" Elm
+Plug 'ElmCast/elm-vim'
+
 " Tmux
-Plug 'christoomey/vim-tmux-runner'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'christoomey/vim-tmux-runner'
+
+" PHP
+Plug 'joonty/vdebug.git'
+
 call plug#end()
 
 filetype on
