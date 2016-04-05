@@ -1,6 +1,6 @@
 [user]
-  name = Bassam Ismail
-  email = skippednote@gmail.com
+  name = Murtaza Alvi
+  email = smurtazama@gmail.com
 
 [color]
   branch = auto
@@ -11,13 +11,13 @@
 
 [core]
   editor = nvim
-  excludesfile = /Users/skippednote/.gitignore_global
+  excludesfile = /Users/murtazaalvi/.gitignore_global
 
 [help]
   autocorrect = 1
 
 [commit]
-  template = /Users/skippednote/.gitmessage
+  template = /Users/murtazaalvi/.gitmessage
 
 [push]
   branch = current
