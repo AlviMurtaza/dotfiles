@@ -10,14 +10,14 @@
   ui = auto
 
 [core]
-  editor = vim
-  excludesfile = /Users/b/.gitignore_global
+  editor = nvim
+  excludesfile = /Users/skippednote/.gitignore_global
 
 [help]
   autocorrect = 1
 
 [commit]
-  template = /Users/b/.gitmessage
+  template = /Users/skippednote/.gitmessage
 
 [push]
   branch = current

@@ -14,9 +14,6 @@ setopt HIST_IGNORE_SPACE
 
 unsetopt CASE_GLOB
 
-autoload -U compinit
-compinit
-
 set -o vi
 
 antigen bundle mafredri/zsh-async
@@ -29,8 +26,9 @@ antigen bundle zsh-users/zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export TERM=xterm-256color
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
