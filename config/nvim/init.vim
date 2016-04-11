@@ -25,6 +25,7 @@ Plug 'editorconfig/editorconfig-vim'
 
 " UI
 Plug 'altercation/vim-colors-solarized'
+Plug 'morhetz/gruvbox'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -47,7 +48,6 @@ Plug 'janko-m/vim-test'
 Plug 'sotte/presenting.vim'
 
 call plug#end()
-
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -116,7 +116,7 @@ set listchars=tab:→\ ,trail:·,extends:❯,precedes:❮
 set textwidth=80
 
 " Colorscheme
-silent colorscheme solarized
+silent colorscheme gruvbox
 
 " Highlight matching parenthesis-like character
 set showmatch
@@ -176,10 +176,10 @@ let g:deoplete#enable_at_startup = 1
 
 " FZF
 nnoremap <C-p> :Files<cr>
-nnoremap <C-b> :Buffers<cr>
+nnoremap <leader>b :Buffers<cr>
 
 " Airline
-let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
 
 " vim-test
 let test#strategy = "neovim"
@@ -193,7 +193,6 @@ map <leader>tv :TestVisit<cr>
 nnoremap <leader>gg :Gstatus<cr>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gb :Gblame<cr>
-
 
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown

@@ -8,3 +8,7 @@ export NVM_DIR=~/.nvm
 
 # z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# php
+export PATH=/Applications/XAMPP/bin:$PATH
+export PATH=$PATH:$HOME/.composer/vendor/bin
