@@ -1,11 +1,11 @@
 # create a directory and cd into it
 function mcd {
-    command mkdir $1 && cd $1
+  command mkdir $1 && cd $1
 }
 
 # simple python server
 function server {
-    python -m SimpleHTTPServer
+  python -m SimpleHTTPServer
 }
 
 # Create Tmux session of current directory name
@@ -17,4 +17,8 @@ function sd {
   docker-machine start $1 > /dev/null
   eval "$(docker-machine env $1)" > /dev/null
   docker-machine ip $1
+}
+
+function weather {
+  curl -4 http://wttr.in/$1
 }
