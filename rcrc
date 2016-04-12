@@ -1,1 +1,1 @@
-EXCLUDES=".DS_Store README.md theme hooks Brewfile tmux.conf"
+EXCLUDES=".DS_Store README.md theme hooks Brewfile"

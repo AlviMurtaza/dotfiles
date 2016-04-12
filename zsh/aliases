@@ -31,5 +31,5 @@ alias tat=new-tmux-from-dir-name
 alias ehosts='sudo vim /etc/hosts'
 
 alias gcopy='git symbolic-ref --short HEAD | pbcopy'
-alias gbc='git checkout $(git branch | cut -c 3- | fzf)'
+alias gbc='git checkout $(git branch -a | cut -c 3- | fzf)'
 alias gdd='git diff --color | diff-so-fancy'

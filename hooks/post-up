@@ -1,12 +1,16 @@
 #!/bin/sh
 
-# install fzf
-if [ ! -e $HOME/.fzf/fzf ]; then
-    git clone https://github.com/junegunn/fzf.git ~/.fzf \
-            && ~/.fzf/install
+# Install vim-plug for NeoVim
+if [ ! -e $HOME/.config/nvim/autoload/plug.vim ]; then
+  curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
 
 # install antigen
 if [ ! -e $HOME/.antigen/antigen.zsh ]; then
   git clone https://github.com/zsh-users/antigen.git $HOME/.antigen
 fi
+
+# install and clean vim plugins using vim-plug
+vim +PlugInstall +PlugClean! +qa
+
