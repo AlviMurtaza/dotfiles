@@ -1,5 +1,5 @@
 [user]
-  name = Murtaza Alvi
+	name = Syed Murtaza Mairaj Alvi
   email = smurtazama@gmail.com
 
 [color]
@@ -10,7 +10,7 @@
   ui = auto
 
 [core]
-  editor = nvim
+  editor = vim
   excludesfile = /Users/murtazaalvi/.gitignore_global
 
 [help]
